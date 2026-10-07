@@ -1,26 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Entretierras </title>
 </head>
 <body>
     <!--Parte del header y nav de la pagína-->
+   
      <header class="header">
-        <a href="" class="logo">
+        <a href="index.html" class="logo">
             <span class="logo-asterisco">*</span> Entretierras
         </a>
 
         <nav class ="nav">
-            <ul class="">
-                <li><a href="#Países" >Países</a></li>
-                <li><a href="Sabores" >Sabores</a></li>
-                <li><a href="Cultura" >Cultura</a></li>
-                <li><a href="Memorias" >Memorias</a></li>
+            <ul class="listas-nav">
+                <li><a href="#paises" >Países</a></li>
+                <li><a href="#sabores" >Sabores</a></li>
+                <li><a href="#cultura" >Cultura</a></li>
+                <li><a href="#ciudades" >Ciudades</a></li>
             </ul>
         </nav>
      </header>
+
+     <main>
 
         <div class="eslogan">
             <p>UNA REVISTA PARA MIRAR LATINOAMÉRICA DE CERCA</p>
@@ -29,16 +32,16 @@
 
      
         <!--Parte de la historia destacada-->
-        <section class="historia-destacada">
+        <section class="historia-destacada" id="inicio">
 
                 <div class="historia-portada">
                     <span class="subtitulo">UN CONTINENTE DE HISTORIAS</span>
-                    <h2 class="titulo-principal">Latinoamérica, con todos los sentidos</h2>
+                    <h1 class="titulo-principal">Latinoamérica, con todos los sentidos</h1>
                      <p>Países que se cuentan en una mesa, una plaza o un paisaje. Descubre lo que nos conecta y lo que hace único a cada lugar.</p>
-                     <a href="#" class="bton">Empieza a descubrir</a>
+                     <a href="#" class="boton">Empieza a descubrir</a>
 
-                     <h3>Sin prisa. Sin una sola mirada.
-                        Un viaje cultural, historia a historia.</h3>
+                     <p>Sin prisa. Sin una sola mirada.
+                        Un viaje cultural, historia a historia.</p>
                 </div>
                 
                 <div class="historia-imagen">
@@ -54,122 +57,242 @@
                     </div>
                 </div>
         </section>
+        <hr class="linea-separadora">
 
         <!--Parte de las secciones de la pagína -->
     <nav class="secciones">
-        <ul>
-            <li><a href="#">¿Qué te mueve?</a></li>
-            <li><a href="#lugares">01 / Los lugares</a></li>
-            <li><a href="#sabores">02 / Los sabores</a></li>
-            <li><a href="#cultura">03 / La cultura</a></li>
-            <li><a href="#memorias">04 / Las memorias</a></li>
-        </ul>
-    </nav>
+    <p class="secciones-titulo">¿Qué te mueve?</p>
+    <ul class="lista-secciones">
+        <li><a href="#paises">01 / Los lugares</a></li>
+        <li><a href="#sabores">02 / Los sabores</a></li>
+        <li><a href="#cultura">03 / La cultura</a></li>
+        <li><a href="#ciudades">04 / Las ciudades</a></li>
+    </ul>
+</nav>
+    <hr class="linea-separadora">
 <!--Parte de las tarjetas de los países-->
-    <section class="tarjetas-paises">
+    <section class="tarjetas-paises" id="paises" >
 
             <div class="introduccion">
                 <span>01/un punto de partida</span>
-                <h1>Cada país, un mundo por descubrir</h1>
-                <h3>Un viaje por Latinoamérica, país por país, historia por historia.</h3>
+                <h2>Cada país, un mundo por descubrir</h2>
+                <p>Un viaje por Latinoamérica, país por país, historia por historia.</p>
             </div>
 
             <div class="seleccion-paises">
 
-                <div class="pais-mexico">
-                    <img src="" alt="Imagen de México">
-                    <h2>México</h2>
-                    <h3>Mercados, cocinas regionales y ciudades donde el pasado conversa con el presente.</h3>
-                    <span>Norte</span>
-                </div>
+                <article class="tarjeta-pais">
+                <img src="" alt="Calle colonial de México">
+                <h3>México</h3>
+                 <p>Mercados, cocinas regionales y ciudades donde el pasado conversa con el presente.</p>
+                  <span class="region">Norte</span>
+              </article>
 
-                <div class="pais-colombia">
+                <article class="tarjeta-pais">
                     <img src="" alt="Imagen de colombia">
-                    <h2>Colombia</h2>
-                    <h3>Del Caribe a los Andes: músicas, paisajes y muchas maneras de compartir un café.</h3>
-                    <span>Sur</span>
-                </div>
+                    <h3>Colombia</h3>
+                    <p>Del Caribe a los Andes: músicas, paisajes y muchas maneras de compartir un café.</p>
+                    <span class="region">Sur</span>
+                </article>
 
-                <div class="pais-guatemala">
+                <article class="tarjeta-pais">
                     <img src="" alt="Imagen de Guatemala">
-                    <h2>Guatemala</h2>
-                    <h3>Lenguas y culturas mayas vivas, volcanes y pueblos a orillas del lago Atitlán.</h3>
-                    <span>Centroamérica</span>
-                </div>
+                    <h3>Guatemala</h3>
+                    <p>Lenguas y culturas mayas vivas, volcanes y pueblos a orillas del lago Atitlán.</p>
+                    <span class="region">Centroamérica</span>
+                </article>
 
-                <div class="pais-argentina">
+                <article class="tarjeta-pais">
                     <img src="" alt="Imagen de Argentina">
-                    <h2>Argentina</h2>
-                    <h3>Librerías, sobremesas y paisajes que cambian de la puna a la Patagonia.</h3>
-                    <span>Sur</span>
+                    <h3>Argentina</h3>
+                    <p>Librerías, sobremesas y paisajes que cambian de la puna a la Patagonia.</p>
+                    <span class="region">Sur</span>
+                </article>
 
-                </div>
-
-                <div class="pais-brasil">
+                <article class="tarjeta-pais">
                     <img src="" alt="Imagen de Brasil">
-                    <h2>Brasil</h2>
-                    <h3>Un país de muchas voces: herencias indígenas, afrobrasileñas y migrantes.</h3>
-                    <span>Sur</span>
-                </div>
+                    <h3>Brasil</h3>
+                    <p>Un país de muchas voces: herencias indígenas, afrobrasileñas y migrantes.</p>
+                    <span class="region">Sur</span>
+                </article>
 
-                <div class="pais-costaRica">
+                <article class="tarjeta-pais">
                     <img src="" alt="Imagen de Costa Rica">
-                    <h2>Costa Rica</h2>
-                    <h3>Bosques nubosos, costas y comunidades que conviven con una biodiversidad extraordinaria.</h3>
-                    <span>Centroamérica</span>
-                </div>
+                    <h3>Costa Rica</h3>
+                    <p>Bosques nubosos, costas y comunidades que conviven con una biodiversidad extraordinaria.</p>
+                    <span class="region">Centroamérica</span>
+                </article>
 
 
             </div>
     </section>
 
     <!--Parte de las tarjetas de los sabores-->
-            <section class="seccion-sabores">
+            <section class="seccion-sabores" id="sabores" >
                      <div class="introduccion-sabores">
-                        <p>02/ SABORES QUE CUENTAN</p>
-                        <h1>La cultura también se sirve a la mesa</h1>
+                        <span>02/ SABORES QUE CUENTAN</span>
+                        <h2>La cultura también se sirve a la mesa</h2>
                         <p>Ingredientes, saberes y rituales cotidianos. Hay mucho más detrás de cada plato.</p>
                      </div>
 
                      <div class="tarjetas-comidas">
-                        <div class="tortilla">
-                            <img src="" alt="Imagen de tortilla">
+                        <article class="tarjeta-comida">
+                            <img src="" alt="Tortillas de maíz recién hechas sobre una mesa de madera">
                             <span>MÉXICO · COCINA</span>
-                            <h2>El maíz, raíz de una mesa</h2>
+                            <h3>El maíz, raíz de una mesa</h3>
                             <p>La nixtamalización transforma el maíz desde hace siglos. En una tortilla también hay técnica, territorio y memoria.</p>
-                        </div>
+                        </article>
 
-                        <div class="ceviche">
+                        <article class="tarjeta-comida">
+                            <img src="" alt="Plato de ceviche con limón, ají y maíz"">
                             <span>PERÚ · SABORES</span>
-                            <h2>Ceviche: frescura y encuentro</h2>
+                            <h3>Ceviche: frescura y encuentro</h3>
                             <p>Pescado, limón, ají y saberes compartidos: una preparación con distintas expresiones a lo largo de la costa peruana.</p>
-                        </div>
+                        </article>
 
-                        <div class="bebida-mate">
+                        <article class="tarjeta-comida">
+                            <img src="" alt="Mate con bombilla junto a un libro abierto">
                             <span>ARGENTINA Y URUGUAY · SOBREMESA</span>
-                            <h2>Un mate, muchas conversaciones</h2>
+                            <h3>Un mate, muchas conversaciones</h3>
                             <p>Más que una bebida, un gesto cotidiano de hospitalidad. La ronda tiene sus tiempos, sus códigos y sus historias.</p>
-                        </div>
+                        </article>
                      </div>
             </section>
             <!--Parte de las tarjetas de la cultura de cada país-->
-            <section class="seccion-cultura">
+            <section class="seccion-cultura" id="cultura">
                 <div class="introduccion-cultura">
                     <span>03/ RAÍCES EN MOVIMIENTO</span>
-                    <h1>Tradiciones que siguen vivas</h1>
-                    <h3>No son piezas de museo: cambian, se transmiten y se reinventan en comunidad.</h3>
+                    <h2>Tradiciones que siguen vivas</h2>
+                    <p>No son piezas de museo: cambian, se transmiten y se reinventan en comunidad.</p>
                 </div>
 
                 <div class="editorial-historias">
-                    <div class="">
-                        <img src="" alt="Imagen de editorial-mexico">
+                    <article class="tarjeta-cultura">
+                        <img src="" alt="img-editorial-mexico">
                         <span>MÉXICO · MEMORIA COLECTIVA</span>
-                        <h1>Día de Muertos: recordar es reunir</h1>
+                        <h3>Día de Muertos: recordar es reunir</h3>
+                        <p>Las ofrendas dan lugar a la memoria de quienes ya no están. Flores, alimentos y objetos queridos expresan vínculos familiares, con prácticas distintas en cada comunidad.</p>
+                    </article>
+
+                    <article class="tarjeta-cultura">
+                        <img src="" alt="img-editorial-bolivia">
+                        <span>BOLIVIA · MÚSICA Y COMUNIDAD</span>
+                        <h3>Oruro: una fiesta de muchas raíces</h3>
+                        <p>El carnaval reúne danzas, música y devoción. La diablada es una de sus expresiones más reconocidas, dentro de una celebración de herencias entrelazadas.</p>
+                    </article>
+
+                    <div class="parrafo-significado">
+                        <p>Una celebración puede tener muchos significados. Conocer su contexto es parte de descubrirla.</p>
                     </div>
+
                 </div>
 
             </section>
 
+            <hr class="linea-separadora"> 
+            
+        <!--Parte de las tarjetas de las ciudades-->
 
+            <section class="seccion-ciudades" id="ciudades">
+                <div class="introduccion-ciudades">
+                    <span>04 / CALLES CON MEMORIA</span>
+                    <h2>Ciudades para caminar la historia</h2>
+                </div>
+
+                    <div class="tarjetas-ciudades">
+                    <article class="tarjeta-ciudad">
+                        <img src="" alt="Calle colonial con balcones de flores en Cartagena">
+                        <span>COLOMBIA · CARTAGENA</span>
+                        <h3>Entre murallas y vida de barrio</h3>
+                        <p>Balcones, plazas y el pulso de Getsemaní: una ciudad caribeña cuya historia también se cuenta desde sus barrios.</p>
+                    </article>
+
+                        <article class="tarjeta-ciudad">
+                            <img src="" alt="Calle colonial con balcones de flores en Quito">
+                            <span>ECUADOR · QUITO</span>
+                            <h3>Una ciudad entre montañas</h3>
+                            <p>En su centro histórico conviven plazas, talleres y arquitectura colonial, a casi 2.850 metros de altitud.</p>
+
+                        </article>
+
+                        <article class="tarjeta-ciudad">
+                            <img src="" alt="Calle colonial con balcones de flores en La Habana">
+                            <span>CUBA · LA HABANA</span>
+                            <h3>Las capas de una capital</h3>
+                            <p>Portales, patios y conversaciones a pie de calle. La Habana se descubre mirando su arquitectura y su vida cotidiana.</p>
+                        </article>
+                    </div>
+                
+            </section>
+
+            <section class="seccion-suscripcion" id="newsletter">
+                <div class="introduccion-suscripcion">
+                    <span>LA CARTA DE ENTRETIERRAS</span>
+                    <h2>Un pequeño viaje, en tu correo.</h2>
+                    <p>Cada mes, historias para descubrir un país, un sabor y una forma distinta de mirar. Sin ruido, con curiosidad.</p>
+                </div>
+
+                <div class="formulario">
+                    <label for="correo">Tu correo electrónico</label>
+                    <form>
+                        <input type="email" name="correo" id="correo" placeholder="hola@correo.com">
+                        <button type="submit">Quiero la carta</button>
+                        
+                    </form>
+                    <p>Al suscribirte aceptas nuestra política de privacidad. Puedes darte de baja cuando quieras.</p>
+                </div>
+            </section>
+
+            </main>
+
+            <footer class="footer">
+
+                <div class="informacion-footer">
+                    <p class="footer-logo">Entretierras</p>
+                    <p>Una revista cultural para descubrir Latinoamérica desde sus lugares, sus saberes y sus muchas voces.</p>
+                    <p>La curiosidad nos acerca.</p>
+                </div>
+
+                <div class="enlaces-footer">
+                    <h3>Explorar</h3>
+                    <ul>
+                        <li><a href="#paises">Países</a></li>
+                        <li><a href="#sabores">Sabores y tradiciones</a></li>
+                        <li><a href="#cultura">Cultura</a></li>
+                        <li><a href="#ciudades">Ciudades</a></li>
+                    </ul>
+                </div>
+
+                <div class="revistas-footer">
+                    <h3>La revistas</h3>
+                    <ul>
+                        <li><a href="#">Nuestra mirada</a></li>
+                        <li><a href="#">Cuadernos de historia</a></li>
+                        <li><a href="#">Colabora con nosotros</a></li>
+                        <li><a href="#">Contacto</a></li>
+                    </ul>
+                </div>
+
+                <div class="redes-sociales">
+                    <h3>Síguenos</h3>
+                    <ul>
+                        <li><a href="#">instagram</a></li>
+                        <li><a href="#">Pinterest</a></li>
+                        <li><a href="#">La carta mensual</a></li>
+                    </ul>
+                </div>
+
+                <hr class="linea-separadora">
+
+                <div class="informacion-legal">
+                    <p>© 2026 Entretierras · Una mirada, nunca la única.</p>
+                    <ul>
+                        <li><a href="#">Privacidad</a></li>
+                        <li><a href="#">Creditos editoriales</a></li>
+                        <li><a href="#inicio">Volver al comienzo</a></li>
+                    </ul>
+                </div>
+            </footer>
+    
 </body>
 </html>
