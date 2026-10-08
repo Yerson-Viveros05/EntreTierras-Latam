@@ -1,6 +1,6 @@
    /* === Layout: estructura de la página (móvil primero) === */
 
-   /*Header*/
+   /*==Header==*/
 .header{
     display:flex;
     flex-direction: column;
@@ -42,4 +42,65 @@
      letter-spacing: 0.08em;
      text-transform: uppercase;
      text-align: center;
+}
+/* ==Parte del hero de la pagina ==*/ 
+.historia.destacada{
+    display: flex;
+    flex-direction: column;
+    gap:1.5rem;
+    padding: 1.5rem 1rem 2rem;
+}
+.historia-portada{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+}
+.subtitulo{
+    color: var(--color-terracota);
+    font-size: 0.625rem;
+    letter-spacing: 0.08rem;
+}
+.titulo-principal{
+    font-size: 2,25rem;
+}
+.boton{
+    display: inline-block;
+    padding: 0.75rem 1.25rem;
+    background: var(--color-terracota);
+    color: var(--color-fondo-alt);
+    font-size: 0.875rem;
+}
+.nota-hero{
+    padding-left: 0.75rem;
+    border-left: 2px;
+      font-size: 0.75rem;
+}
+/* Imagen del hero */ 
+.historia-imagen {
+  position: relative;
+}
+.foto-hero{
+  font-size: 0;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  background: var(--color-fondo-secciones);
+}
+.ubicacion-imagen{
+    font-size: 0.75rem;
+    position: absolute;
+    top: 0.75rem;
+    left:0.75rem;
+    padding: 0.25rem 0.625rem;
+    background: var(--color-fondo-alt);
+}
+.tarjeta-flotante{
+    padding:1rem;
+    background:var(--color-fondo-alt);
+}
+.tarjeta-flotante span {
+  font-size: 0.625rem;
+  letter-spacing: 0.08em;
+  color: var(--color-terracota);
 }
