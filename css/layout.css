@@ -104,3 +104,30 @@
   letter-spacing: 0.08em;
   color: var(--color-terracota);
 }
+/* Secciones de la pagina*/
+.secciones{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 0.75rem 1rem;
+    border-bottom: none;
+}
+.secciones-titulo{
+    font-family: var(--fuente-titulos);
+    font-style: italic;
+}
+.lista-secciones{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 0.5rem 1rem;
+    font-size: 0.75rem;
+}
+.lista-secciones a:hover{
+    color: var(--color-terracota);
+}
+/* == Lineas separadas == */ 
+.linea-separadora{
+    border: none;
+    border-top: 1px solid var(--color-fondo-secciones);
+    margin: 1rem 1rem;
+}
