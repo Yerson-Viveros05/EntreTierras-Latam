@@ -321,3 +321,55 @@
 .tarjeta-ciudad h3 {
   font-size: 1.25rem;
 }
+/* === Newsletter === */
+.seccion-suscripcion{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 2rem 1rem;
+    background: var(--color-fondo-newsletter);
+}
+.introduccion-suscripcion{
+    display: flex;
+    flex-direction: column;
+    gap:0.5rem;
+}
+.introduccion-suscripcion span {
+    font-size: 0.625rem;
+    letter-spacing: 0.08em;
+    color: var(--color-terracota);
+}
+.introduccion-suscripcion h2 {
+    font-size: 1.75rem;
+}
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem
+}
+.formulario form{
+    display: flex;
+    flex-direction: column;
+    gap:0.5rem
+}
+.formulario label {
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: var(--color-titulos);
+}
+.formulario input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid var(--color-fondo-secciones);
+  background: var(--color-fondo-alt);
+  font-family: inherit;
+  font-size: 1rem;
+}
+button.boton{
+    border: none;
+    font-family: inherit;
+    cursor: pointer;
+}
+.aviso-legal {
+    font-size: 0.75rem;
+}
