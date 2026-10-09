@@ -1,0 +1,431 @@
+   /* === Layout: estructura de la página (móvil primero) === */
+
+   /*==Header==*/
+.header{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1rem;
+    border-bottom: 1px solid var(--color-fondo-secciones);
+}
+.logo{
+    font-family: var(--fuente-titulos);
+    font-size: 1.5rem;
+    color: var(--color-titulos);
+}
+.logo-asterisco{
+    color: var(--color-terracota);
+    font-size: 1.25rem;
+    position: relative;
+    top: 0.2rem;
+}
+.lista-nav{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    gap: 1rem 1.5rem;
+     font-size: 0.875rem;
+}
+.lista-nav a:hover{
+ color: var(--color-terracota)
+}
+/*eslogan inicial de la pagina*/
+.eslogan{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.25rem;
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid var(--color-fondo-secciones);
+    font-size: 0.625rem;
+     letter-spacing: 0.08em;
+     text-transform: uppercase;
+     text-align: center;
+}
+/* ==Parte del hero de la pagina ==*/ 
+.historia-destacada{
+    display: flex;
+    flex-direction: column;
+    gap:1.5rem;
+    padding: 1.5rem 1rem 2rem;
+}
+.historia-portada{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+}
+.subtitulo{
+    color: var(--color-terracota);
+    font-size: 0.625rem;
+    letter-spacing: 0.08rem;
+}
+.titulo-principal{
+    font-size: 2,25rem;
+}
+.boton{
+    display: inline-block;
+    padding: 0.75rem 1.25rem;
+    background: var(--color-terracota);
+    color: var(--color-fondo-alt);
+    font-size: 0.875rem;
+}
+.nota-hero{
+    padding-left: 0.75rem;
+    border-left: 2px;
+      font-size: 0.75rem;
+}
+/* Imagen del hero */ 
+.historia-imagen {
+  position: relative;
+}
+.foto-hero{
+  font-size: 0;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  background: var(--color-fondo-secciones);
+}
+.ubicacion-imagen{
+    font-size: 0.75rem;
+    position: absolute;
+    top: 0.75rem;
+    left:0.75rem;
+    padding: 0.25rem 0.625rem;
+    background: var(--color-fondo-alt);
+}
+.tarjeta-flotante{
+    padding:1rem;
+    background:var(--color-fondo-alt);
+}
+.tarjeta-flotante span {
+  font-size: 0.625rem;
+  letter-spacing: 0.08em;
+  color: var(--color-terracota);
+}
+/* Secciones de la pagina*/
+.secciones{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 0.75rem 1rem;
+    border-bottom: none;
+}
+.secciones-titulo{
+    font-family: var(--fuente-titulos);
+    font-style: italic;
+}
+.lista-secciones{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 0.5rem 1rem;
+    font-size: 0.75rem;
+}
+.lista-secciones a:hover{
+    color: var(--color-terracota);
+}
+/* == Lineas separadas == */ 
+.linea-separadora{
+    border: none;
+    border-top: 1px solid var(--color-fondo-secciones);
+    margin: 1rem 1rem;
+}
+/* == Seccion de paises == */ 
+.tarjetas-paises{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 2rem 1rem;
+}
+.introduccion{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem
+}
+.introduccion span{
+    font-size: 0.625rem;
+    letter-spacing: 0.08rem;
+    text-transform: uppercase;
+    color: var(--color-terracota);
+}
+.introduccion h2{
+    font-size: 1.75rem;
+}
+.seccion-paises{
+    display: grid;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.tarjeta-pais{
+    display: flex;
+    flex-direction: column;
+    gap:0.5rem
+}
+.tarjeta-pais img{
+    width: 100%;
+    aspect-ratio: 3/2;
+    object-fit: cover;
+    background: var(--color-fondo-secciones);
+    font-size: 0;
+}
+.tarjeta-pais .region {
+    font-size: 0.625rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--color-terracota);
+}
+/* == Seccion de los platos o sabores de paises destacados ==*/ 
+.seccion-sabores{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 2rem 1rem;
+    background: var(--color-fondo-alt);
+}
+.introduccion-sabores{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.introduccion-sabores span {
+    font-size: 0.625rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--color-terracota);
+}
+.introduccion-sabores h2{
+    font-size:  1.75rem;
+}
+.tarjetas-comidas {
+    display: grid;
+    gap: 1.5rem;
+}
+.tarjeta-comida {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.tarjeta-comida img {
+  width: 100%;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+  background: var(--color-fondo-secciones);
+  font-size: 0;
+}
+.tarjeta-comida span{
+  font-size: 0.625rem;
+  letter-spacing: 0.08rem;
+  text-transform: uppercase;
+  color: var(--color-terracota);
+}
+.tarjeta-comida h3 {
+    font-size: 1.25rem;
+}
+/* == Seccion de cultrua */
+.seccion-cultura{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 2rem 1rem;
+}
+.introduccion-cultura {
+    display: flex;
+    flex-direction: column;
+    gap:0.5rem;
+}
+.introduccion-cultura span{
+    text-transform: uppercase;
+    font-size: 0.625rem;
+    letter-spacing: 0.08em;
+    color: var(--color-terracota);
+}
+.introduccion-cultura h2{
+    font-size: 1.75rem;
+}
+.editorial-historias{
+    display: grid;
+    gap: 1.5rem;
+}
+.tarjeta-cultura{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.tarjeta-cultura img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  background: var(--color-fondo-secciones);
+  font-size: 0;
+}
+.tarjeta-cultura span {
+  font-size: 0.625rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-terracota);
+}
+.tarjeta-cultura h3 {
+    font-size: 1.5rem;
+}
+.parrafo-significado {
+  padding-left: 0.75rem;
+  border-left: 2px solid var(--color-terracota);
+  font-family: var(--fuente-titulos);
+  font-style: italic;
+  font-size: 1.125rem;
+}
+/* Seccion de ciudades */ 
+.seccion-ciudades{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1rem 1rem;
+}
+.introduccion-ciudades {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.introduccion-ciudades span{
+    font-size: 0.625rem;
+    letter-spacing: 0.08rem;
+    text-transform: uppercase;
+    color: var(--color-terracota)
+}
+.seccion-ciudades h2{
+    font-size: 1.75rem;
+}
+.tarjetas-ciudades {
+    display: grid;
+    gap: 1.5rem;
+}
+.tarjeta-ciudad{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.tarjeta-ciudad img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  background: var(--color-fondo-secciones);
+  font-size: 0;
+}
+.tarjeta-ciudad span {
+  font-size: 0.625rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-terracota);
+}
+.tarjeta-ciudad h3 {
+  font-size: 1.25rem;
+}
+/* === Newsletter === */
+.seccion-suscripcion{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 2rem 1rem;
+    background: var(--color-fondo-newsletter);
+}
+.introduccion-suscripcion{
+    display: flex;
+    flex-direction: column;
+    gap:0.5rem;
+}
+.introduccion-suscripcion span {
+    font-size: 0.625rem;
+    letter-spacing: 0.08em;
+    color: var(--color-terracota);
+}
+.introduccion-suscripcion h2 {
+    font-size: 1.75rem;
+}
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem
+}
+.formulario form{
+    display: flex;
+    flex-direction: column;
+    gap:0.5rem
+}
+.formulario label {
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: var(--color-titulos);
+}
+.formulario input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid var(--color-fondo-secciones);
+  background: var(--color-fondo-alt);
+  font-family: inherit;
+  font-size: 1rem;
+}
+button.boton{
+    border: none;
+    font-family: inherit;
+    cursor: pointer;
+}
+.aviso-legal {
+    font-size: 0.75rem;
+}
+/* == Footer == */ 
+.footer {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 2rem 1rem;
+    border-top: 1px solid var(--color-fondo-secciones);
+}
+.informacion-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.footer-logo {
+  font-family: var(--fuente-titulos);
+  font-size: 1.5rem;
+  color: var(--color-titulos);
+}
+.footer-lema {
+  font-family: var(--fuente-titulos);
+  font-style: italic;
+  color: var(--color-terracota);
+}
+.footer h3 {
+  margin-bottom: 0.5rem;
+  font-family: var(--fuente-texto);
+  font-size: 0.625rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.footer li {
+  margin-bottom: 0.5rem;
+  font-size: 0.875rem;
+}
+.footer a:hover {
+  color: var(--color-terracota);
+}
+.footer .linea-separadora {
+  margin: 0;
+}
+.informacion-legal {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  font-size: 0.75rem;
+}
+.informacion-legal ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1rem;
+}
+
+.informacion-legal li {
+  margin-bottom: 0;
+  font-size: inherit;
+}

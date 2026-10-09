@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
 </head>
 <body>
     <!--Parte del header y nav de la pagína-->
@@ -17,8 +18,8 @@
             <span class="logo-asterisco">*</span> Entretierras
         </a>
 
-        <nav class ="nav">
-            <ul class="listas-nav">
+        <nav class ="nav" aria-label="Navegación principal">
+            <ul class="lista-nav">
                 <li><a href="#paises" >Países</a></li>
                 <li><a href="#sabores" >Sabores</a></li>
                 <li><a href="#cultura" >Cultura</a></li>
@@ -42,16 +43,15 @@
                     <span class="subtitulo">UN CONTINENTE DE HISTORIAS</span>
                     <h1 class="titulo-principal">Latinoamérica, con todos los sentidos</h1>
                      <p>Países que se cuentan en una mesa, una plaza o un paisaje. Descubre lo que nos conecta y lo que hace único a cada lugar.</p>
-                     <a href="#" class="boton">Empieza a descubrir</a>
+                     <a href="#paises" class="boton">Empieza a descubrir</a>
 
-                     <p>Sin prisa. Sin una sola mirada.
+                     <p class="nota-hero">Sin prisa. Sin una sola mirada.
                         Un viaje cultural, historia a historia.</p>
                 </div>
                 
                 <div class="historia-imagen">
-                    <img src="" alt="Calle de de Oaxaca">
+                    <img src=""class="foto-hero" alt="Calle colonial con balcones de flores en Oaxaca">
                     <div class="ubicacion-imagen">
-                        <img src="" alt="Icono de ubicación">
                         <p>Oaxaca, México</p>
                     </div>
 
@@ -64,7 +64,7 @@
         <hr class="linea-separadora">
 
         <!--Parte de las secciones de la pagína -->
-    <nav class="secciones">
+    <nav class="secciones" arial-label="Secciones de la revista">
     <p class="secciones-titulo">¿Qué te mueve?</p>
     <ul class="lista-secciones">
         <li><a href="#paises">01 / Los lugares</a></li>
@@ -148,7 +148,7 @@
                         </article>
 
                         <article class="tarjeta-comida">
-                            <img src="" alt="Plato de ceviche con limón, ají y maíz"">
+                            <img src="" alt="Plato de ceviche con limón, ají y maíz">
                             <span>PERÚ · SABORES</span>
                             <h3>Ceviche: frescura y encuentro</h3>
                             <p>Pescado, limón, ají y saberes compartidos: una preparación con distintas expresiones a lo largo de la costa peruana.</p>
@@ -172,14 +172,14 @@
 
                 <div class="editorial-historias">
                     <article class="tarjeta-cultura">
-                        <img src="" alt="img-editorial-mexico">
+                        <img src="" alt="Ofrenda de Día de Muertos con flores y velas">
                         <span>MÉXICO · MEMORIA COLECTIVA</span>
                         <h3>Día de Muertos: recordar es reunir</h3>
                         <p>Las ofrendas dan lugar a la memoria de quienes ya no están. Flores, alimentos y objetos queridos expresan vínculos familiares, con prácticas distintas en cada comunidad.</p>
                     </article>
 
                     <article class="tarjeta-cultura">
-                        <img src="" alt="img-editorial-bolivia">
+                        <img src="" alt="Danzantes de la diablada en el carnaval de Oruro">
                         <span>BOLIVIA · MÚSICA Y COMUNIDAD</span>
                         <h3>Oruro: una fiesta de muchas raíces</h3>
                         <p>El carnaval reúne danzas, música y devoción. La diablada es una de sus expresiones más reconocidas, dentro de una celebración de herencias entrelazadas.</p>
@@ -212,7 +212,7 @@
                     </article>
 
                         <article class="tarjeta-ciudad">
-                            <img src="" alt="Calle colonial con balcones de flores en Quito">
+                            <img src="" alt="Calle empedrada del centro histórico de Quito con montañas al fondo">
                             <span>ECUADOR · QUITO</span>
                             <h3>Una ciudad entre montañas</h3>
                             <p>En su centro histórico conviven plazas, talleres y arquitectura colonial, a casi 2.850 metros de altitud.</p>
@@ -220,7 +220,7 @@
                         </article>
 
                         <article class="tarjeta-ciudad">
-                            <img src="" alt="Calle colonial con balcones de flores en La Habana">
+                            <img src="" alt="Portales y fachadas coloniales de La Habana">
                             <span>CUBA · LA HABANA</span>
                             <h3>Las capas de una capital</h3>
                             <p>Portales, patios y conversaciones a pie de calle. La Habana se descubre mirando su arquitectura y su vida cotidiana.</p>
@@ -240,10 +240,10 @@
                     <label for="correo">Tu correo electrónico</label>
                     <form>
                         <input type="email" name="correo" id="correo" placeholder="hola@correo.com">
-                        <button type="submit">Quiero la carta</button>
+                        <button type="submit" class="boton">Quiero la carta</button>
                         
                     </form>
-                    <p>Al suscribirte aceptas nuestra política de privacidad. Puedes darte de baja cuando quieras.</p>
+                    <p class="aviso-legal">Al suscribirte aceptas nuestra política de privacidad. Puedes darte de baja cuando quieras.</p>
                 </div>
             </section>
 
@@ -268,7 +268,7 @@
                 </div>
 
                 <div class="revistas-footer">
-                    <h3>La revistas</h3>
+                    <h3>La revista</h3>
                     <ul>
                         <li><a href="#">Nuestra mirada</a></li>
                         <li><a href="#">Cuadernos de historia</a></li>
@@ -280,7 +280,7 @@
                 <div class="redes-sociales">
                     <h3>Síguenos</h3>
                     <ul>
-                        <li><a href="#">instagram</a></li>
+                        <li><a href="#">Instagram</a></li>
                         <li><a href="#">Pinterest</a></li>
                         <li><a href="#">La carta mensual</a></li>
                     </ul>
