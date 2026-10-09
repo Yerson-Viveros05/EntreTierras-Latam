@@ -175,3 +175,50 @@
     text-transform: uppercase;
     color: var(--color-terracota);
 }
+/* == Seccion de los platos o sabores de paises destacados ==*/ 
+.seccion-sabores{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 2rem 1rem;
+    background: var(--color-fondo-alt);
+}
+.introduccion-sabores{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.introduccion-sabores span {
+    font-size: 0.625rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--color-terracota);
+}
+.introduccion-sabores h2{
+    font-size:  1.75rem;
+}
+.tarjetas-comidas {
+    display: grid;
+    gap: 1.5rem;
+}
+.tarjeta-comida {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.tarjeta-comida img {
+  width: 100%;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+  background: var(--color-fondo-secciones);
+  font-size: 0;
+}
+.tarjeta-comida span{
+  font-size: 0.625rem;
+  letter-spacing: 0.08rem;
+  text-transform: uppercase;
+  color: var(--color-terracota);
+}
+.tarjeta-comida h3 {
+    font-size: 1.25rem;
+}
