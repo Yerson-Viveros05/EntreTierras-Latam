@@ -275,3 +275,49 @@
   font-style: italic;
   font-size: 1.125rem;
 }
+/* Seccion de ciudades */ 
+.seccion-ciudades{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1rem 1rem;
+}
+.introduccion-ciudades {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.introduccion-ciudades span{
+    font-size: 0.625rem;
+    letter-spacing: 0.08rem;
+    text-transform: uppercase;
+    color: var(--color-terracota)
+}
+.seccion-ciudades h2{
+    font-size: 1.75rem;
+}
+.tarjetas-ciudades {
+    display: grid;
+    gap: 1.5rem;
+}
+.tarjeta-ciudad{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.tarjeta-ciudad img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  background: var(--color-fondo-secciones);
+  font-size: 0;
+}
+.tarjeta-ciudad span {
+  font-size: 0.625rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-terracota);
+}
+.tarjeta-ciudad h3 {
+  font-size: 1.25rem;
+}
