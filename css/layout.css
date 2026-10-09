@@ -222,3 +222,56 @@
 .tarjeta-comida h3 {
     font-size: 1.25rem;
 }
+/* == Seccion de cultrua */
+.seccion-cultura{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 2rem 1rem;
+}
+.introduccion-cultura {
+    display: flex;
+    flex-direction: column;
+    gap:0.5rem;
+}
+.introduccion-cultura span{
+    text-transform: uppercase;
+    font-size: 0.625rem;
+    letter-spacing: 0.08em;
+    color: var(--color-terracota);
+}
+.introduccion-cultura h2{
+    font-size: 1.75rem;
+}
+.editorial-historias{
+    display: grid;
+    gap: 1.5rem;
+}
+.tarjeta-cultura{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.tarjeta-cultura img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  background: var(--color-fondo-secciones);
+  font-size: 0;
+}
+.tarjeta-cultura span {
+  font-size: 0.625rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-terracota);
+}
+.tarjeta-cultura h3 {
+    font-size: 1.5rem;
+}
+.parrafo-significado {
+  padding-left: 0.75rem;
+  border-left: 2px solid var(--color-terracota);
+  font-family: var(--fuente-titulos);
+  font-style: italic;
+  font-size: 1.125rem;
+}
