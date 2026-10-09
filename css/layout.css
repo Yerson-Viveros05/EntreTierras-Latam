@@ -81,7 +81,6 @@
   position: relative;
 }
 .foto-hero{
-  font-size: 0;
   width: 100%;
   aspect-ratio: 4 / 3;
   object-fit: cover;
@@ -167,7 +166,6 @@
     aspect-ratio: 3/2;
     object-fit: cover;
     background: var(--color-fondo-secciones);
-    font-size: 0;
 }
 .tarjeta-pais .region {
     font-size: 0.625rem;
@@ -211,7 +209,6 @@
   aspect-ratio: 3 / 2;
   object-fit: cover;
   background: var(--color-fondo-secciones);
-  font-size: 0;
 }
 .tarjeta-comida span{
   font-size: 0.625rem;
@@ -222,7 +219,7 @@
 .tarjeta-comida h3 {
     font-size: 1.25rem;
 }
-/* == Seccion de cultrua */
+/* == Seccion de cultura */
 .seccion-cultura{
     display: flex;
     flex-direction: column;
@@ -257,7 +254,6 @@
   aspect-ratio: 4 / 3;
   object-fit: cover;
   background: var(--color-fondo-secciones);
-  font-size: 0;
 }
 .tarjeta-cultura span {
   font-size: 0.625rem;
@@ -310,7 +306,6 @@
   aspect-ratio: 4 / 3;
   object-fit: cover;
   background: var(--color-fondo-secciones);
-  font-size: 0;
 }
 .tarjeta-ciudad span {
   font-size: 0.625rem;
