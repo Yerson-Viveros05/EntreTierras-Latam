@@ -131,3 +131,47 @@
     border-top: 1px solid var(--color-fondo-secciones);
     margin: 1rem 1rem;
 }
+/* == Seccion de paises == */ 
+.tarjeta-paises{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 2rem 1rem;
+}
+.introduccion{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem
+}
+.introduccion span{
+    font-size: 0.625rem;
+    letter-spacing: 0.08rem;
+    text-transform: uppercase;
+    color: var(--color-terracota);
+}
+.introduccion h2{
+    font-size: 1.75rem;
+}
+.seccion-paises{
+    display: grid;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.tarjeta-pais{
+    display: flex;
+    flex-direction: column;
+    gap:0.5rem
+}
+.tarjeta-pais img{
+    width: 100%;
+    aspect-ratio: 3/2;
+    object-fit: cover;
+    background: var(--color-fondo-secciones);
+    font-size: 0;
+}
+.tarjeta-pais .region {
+    font-size: 0.625rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--color-terracota);
+}
