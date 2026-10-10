@@ -9,10 +9,14 @@
   --color-fondo-alt: #FFFCF6;
   --color-fondo-newsletter: #EFE1D5;
   --color-fondo-secciones: #D9D5C9;
-
+  --color-verde-suave: #E6EADD;
   /*tipografías*/
   --fuente-titulos: 'Lora', Georgia, serif;
   --fuente-texto: 'Inter', system-ui, sans-serif;
+
+  /*margenes */
+  --margen-lateral: 1rem;
+  --ancho-max: 1200px;
 }
 
 *,

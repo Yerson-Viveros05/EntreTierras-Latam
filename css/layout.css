@@ -36,7 +36,7 @@
     flex-direction: column;
     align-items: center;
     gap: 0.25rem;
-    padding: 0.75rem 1rem;
+   padding-block: 0.75rem;
     border-bottom: 1px solid var(--color-fondo-secciones);
     font-size: 0.625rem;
      letter-spacing: 0.08em;
@@ -48,7 +48,7 @@
     display: flex;
     flex-direction: column;
     gap:1.5rem;
-    padding: 1.5rem 1rem 2rem;
+   padding-block: 1.5rem 2rem;
 }
 .historia-portada{
     display: flex;
@@ -108,7 +108,7 @@
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
-    padding: 0.75rem 1rem;
+    padding-block: 0.75rem;
     border-bottom: none;
 }
 .secciones-titulo{
@@ -128,14 +128,14 @@
 .linea-separadora{
     border: none;
     border-top: 1px solid var(--color-fondo-secciones);
-    margin: 1rem 1rem;
+    margin: 1rem var(--margen-lateral);
 }
 /* == Seccion de paises == */ 
 .tarjetas-paises{
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
-    padding: 2rem 1rem;
+    padding-block: 2rem;
 }
 .introduccion{
     display: flex;
@@ -178,7 +178,7 @@
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
-    padding: 2rem 1rem;
+    padding-block: 2rem;
     background: var(--color-fondo-alt);
 }
 .introduccion-sabores{
@@ -224,7 +224,7 @@
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
-    padding: 2rem 1rem;
+    padding-block: 2rem;
 }
 .introduccion-cultura {
     display: flex;
@@ -272,11 +272,12 @@
   font-size: 1.125rem;
 }
 /* Seccion de ciudades */ 
-.seccion-ciudades{
+.seleccion-ciudades{
     display: flex;
-    flex-direction: column;
     gap: 1.5rem;
-    padding: 1rem 1rem;
+}
+.seccion-ciudades{
+    padding-block: 2rem;
 }
 .introduccion-ciudades {
     display: flex;
@@ -321,7 +322,7 @@
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
-    padding: 2rem 1rem;
+    padding-block: 2rem;
     background: var(--color-fondo-newsletter);
 }
 .introduccion-suscripcion{
@@ -373,7 +374,7 @@ button.boton{
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
-    padding: 2rem 1rem;
+    padding-block: 2rem;
     border-top: 1px solid var(--color-fondo-secciones);
 }
 .informacion-footer {
@@ -390,6 +391,16 @@ button.boton{
   font-family: var(--fuente-titulos);
   font-style: italic;
   color: var(--color-terracota);
+}
+.revistas-footer h3, 
+.redes-sociales h3, 
+.enlaces-footer h3 {
+    color: var(--color-texto);
+}
+.revistas-footer a, 
+.redes-sociales a, 
+.enlaces-footer a {
+    color: var(--color-titulos);
 }
 .footer h3 {
   margin-bottom: 0.5rem;
@@ -423,4 +434,17 @@ button.boton{
 .informacion-legal li {
   margin-bottom: 0;
   font-size: inherit;
+}
+/* Para ajustar un poco las margenes*/
+.header,
+.eslogan,
+.historia-destacada,
+.secciones,
+.tarjetas-paises,
+.seccion-sabores,
+.seccion-cultura,
+.seccion-ciudades,
+.seccion-suscripcion,
+.footer {
+  padding-inline: var(--margen-lateral);
 }
