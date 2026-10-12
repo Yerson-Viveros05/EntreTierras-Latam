@@ -1,0 +1,170 @@
+@media (min-width: 768px) {
+  :root { --margen-lateral: 2rem; }
+
+  .seleccion-paises,
+  .tarjetas-comidas,
+  .tarjetas-ciudades {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 1024px){
+     :root { --margen-lateral: max(3rem, calc((100% - 1200px) / 2)); }
+    .header{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding-block: 2rem;
+    }
+    .eslogan{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .historia-destacada{
+        align-items: center;
+        flex-direction: row;
+        gap: 2rem;
+    }
+    .foto-hero{
+        max-height: 36rem;
+    }
+    .ubicacion-imagen{
+        position: absolute;
+        top: 20px;
+        left: 20px;
+    }
+    .tarjeta-flotante{
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+    }
+    .historia-portada{
+       display: flex;
+       flex-direction: column;
+       gap: 1rem;
+    }
+    .titulo-principal{
+
+       font-size: clamp(2.25rem, 4vw, 3.5rem);
+    }
+    .boton{
+      margin-bottom: 10px;
+    }
+    .nota-hero{
+        max-width: 280px;
+    }
+    
+    .secciones{
+       flex-direction: row;
+       justify-content: space-between;
+       align-items: center;
+       padding-block: 0.75rem;
+    }
+    .lista-secciones{
+        display: flex;
+        flex: 1;
+        justify-content: space-between;
+        margin-left: 3rem;
+    }
+   .seleccion-paises , .tarjetas-comidas, 
+   .tarjetas-ciudades{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+   }
+   .seccion-ciudades{
+     padding-block: 4rem;
+   }
+   .seleccion-paises{
+    gap:1.5rem;
+   }
+   .editorial-historias {
+    grid-template-columns: 2fr 1fr;
+    align-items: start;
+   }
+   .tarjeta-cultura:first-child{
+    grid-row: 1/ span 2;
+   }
+   .parrafo-significado{
+    padding: 1rem;
+    background: var(--color-verde-suave);
+    border-left: none;
+   }
+   .tarjeta-cultura:first-child img { 
+    aspect-ratio: 16 / 9; 
+}
+.tarjeta-cultura:nth-child(2) img { 
+    aspect-ratio: 4 / 3; 
+}
+.seccion-suscripcion {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3rem;
+}
+
+.introduccion-suscripcion,
+.formulario {
+  flex: 1;
+}
+
+.formulario form {
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.formulario label {
+  width: 100%;
+}
+
+.formulario input {
+  flex: 1;
+  width: auto;
+}
+
+.formulario .boton {
+  width: auto;
+}
+
+/* Footer */
+.footer {
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.informacion-footer {
+  flex: 2;
+  max-width: 24rem;
+}
+
+.enlaces-footer,
+.revistas-footer,
+.redes-sociales {
+  flex: 1;
+}
+
+.footer .linea-separadora,
+.informacion-legal {
+  width: 100%;
+}
+
+.informacion-legal {
+  flex-direction: row;
+  justify-content: space-between;
+}
+.footer-logo{
+    font-size: 2rem;
+}
+.revistas-footer h3, 
+.redes-sociales h3, 
+.enlaces-footer h3 {
+    color: var(--color-texto);
+}
+.revistas-footer a, 
+.redes-sociales a, 
+.enlaces-footer a {
+    color: var(--color-titulos);
+}
+
+}
