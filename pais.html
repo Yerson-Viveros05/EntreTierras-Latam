@@ -1,9 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pais | Entretierras</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/layout.css">
     <link rel="stylesheet" href="css/responsive.css">
@@ -21,6 +24,7 @@
                 <li><a href="#sabores" >Sabores</a></li>
                 <li><a href="#cultura" >Cultura</a></li>
                 <li><a href="#ciudades" >Ciudades</a></li>
+                 <li><a href="quiz.html">Quiz</a></li>
             </ul>
         </nav>
      </header>
@@ -28,14 +32,14 @@
         <section class="presentacion-pais" aria-label="presentacion">
         <div class="ruta-estado">
             <ul>
-               <li><a href="">Inicio</a></li>
-               <li><a href="">Paises</a></li>
-               <li><a href="">Colombia</a></li>
+               <li><a href="index.html">Inicio</a></li>
+               <li><a href="index.html#paises">Países</a></li>
+               <li aria-current="page">Colombia</li>
             </ul>
-        </div>
+            </div>
 
             <article class="contenedor-imagen">
-                <img src="" alt="pais de colombia">
+                <img src="img/paises/colombia-pais.jpg" alt="pais de colombia">
                 <div class="pie-foto">
                     <p>Valle de Cocora, Quindío · Entre palmas y montañas.</p>
                 </div>
@@ -43,7 +47,7 @@
             <div class="nombre-mirada">
                 <span>SUR · PAÍS</span>
                 <h1>Colombia</h1>
-                <p>Del caribe a lo Andes, un país que se descubra sin prisa</p>
+                <p>Del caribe a lo Andes, un país que se descubra sin prisa.</p>
             </div>
             <hr>
             <div class="datos-rapidos">
@@ -75,14 +79,14 @@
                 </div>
             </div>
 
-            <div class="motivo-viajar" arial-label="Sugerencias para visitar">
-                <div>
+            <div class="motivo-viajar">
+                <div class="aclaracion-motivo">
                     <h2>Por qué visitarlo</h2>
                     <p>Colombia no cabe en una sola postal. En Bogotá, las plazas de mercado y los museos conversan con la montaña; en el Caribe, las calles de Cartagena se abren a músicas y memorias afrocolombianas. Entre una región y otra cambian el clima, la mesa y la manera de contar una historia.
                         En el Eje Cafetero, conocer una finca es acercarse a los saberes detrás de cada taza. Más allá esperan páramos, selvas y dos océanos. Viajar con tiempo, escuchar a las comunidades y elegir guías locales permite descubrir un país de muchas voces, sin reducirlo a sus paisajes.
                     </p>
                 </div>
-                <div>
+                <div class="ficha-viaje">
                     <h3>Antes de hacer la maleta</h3>
                     <span>MEJOR ÉPOCA</span>
                     <p>Depende de la región. En los Andes y el Caribe, diciembre–marzo suele ser menos lluvioso; el Pacífico y la Amazonía tienen otros ritmos.</p>
@@ -100,21 +104,21 @@
                 <div class="lugares">
 
                     <article class="seleccion-lugares">
-                        <img src="" alt="">
+                        <img src="img/ciudades/ciudad-cartagena.jpg" alt="Tienda de cartagena">
                         <span>BOLÍVAR · CARIBE</span>
                         <h3>Cartagena de Indias</h3>
                         <p>Murallas, balcones y la vida de barrio en Getsemaní.</p>
                     </article>
 
                     <article class="seleccion-lugares">
-                        <img src="" alt="">
+                        <img src="img/ciudades/quindio.jpg" alt="">
                         <span>QUINDÍO · ANDES</span>
                         <h3>Valle de Cocora</h3>
                         <p>Senderos entre palmas de cera y montañas de niebla.</p>
                     </article>
 
                     <article class="seleccion-lugares">
-                        <img src="" alt="">
+                        <img src="img/ciudades/magdalena.jpg" alt="">
                         <span>MAGDALENA · CARIBE</span>
                         <h3>Parque Tayrona</h3>
                         <p>El bosque se encuentra con el mar al pie de la Sierra Nevada.</p>
@@ -123,35 +127,43 @@
 
         </section>
 
-        <section class="seguir-explorando"arial-label="Seccion para seguir explorando mas paises">
+        <section class="seguir-explorando"aria-label="Seccion para seguir explorando mas paises">
             <h2>Seguir explorando</h2>
             <div class="seccion-exploracion">
-                <articles class="tarjeta-pais">
-                    <img src="" alt="">
+                <article class="tarjeta-pais">
+                    <img src="img/paises/mexico-pais.jpg" alt="pais-mexico">
                     <h3>Mexico</h3>
                     <p>Mercados, cocinas regionales y ciudades donde el pasado conversa con el presente.</p>
                     <span>NORTE</span>
-                </articles>
-                <articles class="tarjeta-pais">
-                    <img src="" alt="">
+                </article>
+                <article class="tarjeta-pais">
+                    <img src="img/paises/guatemala-pais.jpg" alt="pais-guatemala">
                     <h3>Guatemala</h3>
                     <p>Lenguas y culturas mayas vivas, volcanes y pueblos a orillas del lago Atitlán.</p>
                     <span>CENTRO · EXPLORAR PAÍS</span>
-                </articles>
-                <articles class="tarjeta-pais">
-                    <img src="" alt="">
+                </article>
+                <article class="tarjeta-pais">
+                    <img src="img/paises/brasil-pais.jpg" alt="pais-brasil">
                     <h3>Brasil</h3>
                     <p>Un país de muchas voces: herencias indígenas, afrobrasileñas y migrantes.</p>
                     <span>SUR</span>
-                </articles>
+                </article>
             </div>
              <hr>
              <div class="regreso-indice">
                 <ul>
-                    <li><a href="">Volver a los países</a></li>
+                    <li><a href="index.html#paises">Volver a los países</a></li>
                 </ul>
              </div>
         </section>
+        <section class="seccion-quiz" id="quiz" aria-labelledby="titulo-quiz">
+    <div class="introduccion-quiz">
+        <span>UN QUIZ DE 5 PREGUNTAS</span>
+        <h2 id="titulo-quiz">¿Qué país de Latinoamérica es para ti?</h2>
+        <p>Cuéntanos cómo te gusta viajar y te sugerimos un país para empezar.</p>
+    </div>
+    <a href="quiz.html" class="boton">Hacer el quiz →</a>
+</section>
      </main>
       <footer class="footer">
 
@@ -201,5 +213,5 @@
                     </ul>
                 </div>
             </footer>
-</body>
-</html>
+    </body>
+    </html>
