@@ -1,0 +1,179 @@
+/* ===== quiz.css =====
+   Mobile-first. Los valores de abajo son de respaldo:
+   cámbialos por las variables reales de tu base.css. */
+.quiz {
+    --quiz-fondo: #fffaf3;
+    --quiz-texto: #2a2a2a;
+    --quiz-acento: #b4532a;
+    --quiz-borde: #d9d2c7;
+    --quiz-suave: #f1e9dc;
+
+    padding: 2rem var(--margen-lateral, 1.25rem);
+    max-width: 48rem;
+    margin: 0 auto;
+}
+
+/* ----- Introducción ----- */
+.introduccion-quiz {
+    margin-bottom: 2rem;
+}
+
+.introduccion-quiz span {
+    display: block;
+    font-size: 0.8rem;
+    letter-spacing: 0.08em;
+    margin-bottom: 0.5rem;
+}
+
+.introduccion-quiz h1 {
+    margin-bottom: 0.75rem;
+}
+
+/* ----- Progreso ----- */
+.quiz-progreso {
+    margin-bottom: 1.5rem;
+}
+
+.quiz-contador {
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+
+.quiz-barra {
+    height: 0.4rem;
+    background: var(--quiz-suave);
+    border-radius: 999px;
+    overflow: hidden;
+}
+
+.quiz-barra-relleno {
+    height: 100%;
+    width: 20%;
+    background: var(--quiz-acento);
+    transition: width 0.3s ease;
+}
+
+/* ----- Pregunta y opciones ----- */
+.quiz-texto {
+    margin-bottom: 1.25rem;
+}
+
+.quiz-opciones {
+    display: grid;
+    gap: 0.75rem;
+    margin-bottom: 1.5rem;
+}
+
+.quiz-opcion {
+    width: 100%;
+    text-align: left;
+    padding: 1rem;
+    font: inherit;
+    color: var(--quiz-texto);
+    background: var(--quiz-fondo);
+    border: 1px solid var(--quiz-borde);
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: border-color 0.2s ease, background-color 0.2s ease;
+}
+
+.quiz-opcion:hover {
+    border-color: var(--quiz-acento);
+}
+
+.quiz-opcion.seleccionada {
+    border-color: var(--quiz-acento);
+    background: var(--quiz-suave);
+    box-shadow: inset 0.25rem 0 0 var(--quiz-acento);
+}
+
+.quiz-opcion:focus-visible,
+#quiz-siguiente:focus-visible,
+.quiz-reiniciar:focus-visible {
+    outline: 3px solid var(--quiz-acento);
+    outline-offset: 2px;
+}
+
+#quiz-siguiente:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+/* ----- Resultado ----- */
+.quiz-resultado img {
+    width: 100%;
+    height: 14rem;
+    object-fit: cover;
+    border-radius: 0.5rem;
+    margin-bottom: 1.25rem;
+}
+
+.quiz-resultado-texto span {
+    display: block;
+    font-size: 0.8rem;
+    letter-spacing: 0.08em;
+    margin-bottom: 0.5rem;
+}
+
+.quiz-resultado-texto h2 {
+    margin-bottom: 0.75rem;
+}
+
+.quiz-resultado-texto p {
+    margin-bottom: 1.25rem;
+}
+
+.quiz-reiniciar {
+    display: block;
+    margin-top: 1rem;
+    padding: 0;
+    font: inherit;
+    color: var(--quiz-texto);
+    background: none;
+    border: none;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* ----- Error ----- */
+.quiz-error {
+    padding: 1rem;
+    border: 1px solid var(--quiz-acento);
+    border-radius: 0.5rem;
+}
+
+/* El atributo hidden debe ganarle a cualquier display de arriba */
+[hidden] {
+    display: none !important;
+}
+
+/* ----- Escritorio (un solo breakpoint, como en responsive.css) ----- */
+@media (min-width: 1024px) {
+    .quiz {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
+
+    .quiz-opciones {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .quiz-resultado {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+        align-items: center;
+    }
+
+    .quiz-resultado img {
+        height: 22rem;
+        margin-bottom: 0;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .quiz-barra-relleno,
+    .quiz-opcion {
+        transition: none;
+    }
+}

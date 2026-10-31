@@ -151,7 +151,7 @@
 .introduccion h2{
     font-size: 1.75rem;
 }
-.seccion-paises{
+.seleccion-paises{
     display: grid;
     flex-direction: column;
     gap: 0.5rem;
@@ -271,12 +271,9 @@
   font-style: italic;
   font-size: 1.125rem;
 }
-/* Seccion de ciudades */ 
-.seleccion-ciudades{
+.seccion-ciudades{
     display: flex;
     gap: 1.5rem;
-}
-.seccion-ciudades{
     padding-block: 2rem;
 }
 .introduccion-ciudades {
@@ -434,6 +431,20 @@ button.boton{
 .informacion-legal li {
   margin-bottom: 0;
   font-size: inherit;
+}
+.tarjeta-pais {
+  position: relative;
+}
+
+.tarjeta-pais h3 a::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+}
+
+.tarjeta-pais:hover h3 a,
+.tarjeta-pais:focus-within h3 a {
+  color: var(--color-terracota);
 }
 /* Para ajustar un poco las margenes*/
 .header,
