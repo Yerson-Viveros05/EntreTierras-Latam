@@ -231,12 +231,7 @@
     }
 
     /* título a la izquierda, frase a la derecha */
-    .nombre-mirada {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        column-gap: 3rem;
-        align-items: end;
-    }
+    
     .nombre-mirada span { grid-column: 1 / -1; }
     .nombre-mirada h1   { grid-column: 1; font-size: 5rem; }
     .nombre-mirada p    { grid-column: 2; font-size: 1.125rem; }

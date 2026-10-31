@@ -1,0 +1,75 @@
+{
+  "resultados": {
+    "mexico": {
+      "nombre": "México",
+      "frase": "Mercados, cocinas regionales y ciudades donde el pasado conversa con el presente."
+    },
+    "colombia": {
+      "nombre": "Colombia",
+      "frase": "Del Caribe a los Andes: músicas, paisajes y muchas maneras de compartir un café."
+    },
+    "guatemala": {
+      "nombre": "Guatemala",
+      "frase": "Lenguas y culturas mayas vivas, volcanes y pueblos a orillas del lago Atitlán."
+    },
+    "argentina": {
+      "nombre": "Argentina",
+      "frase": "Librerías, sobremesas y paisajes que cambian de la puna a la Patagonia."
+    },
+    "brasil": {
+      "nombre": "Brasil",
+      "frase": "Un país de muchas voces: herencias indígenas, afrobrasileñas y migrantes."
+    },
+    "costa-rica": {
+      "nombre": "Costa Rica",
+      "frase": "Bosques nubosos, costas y comunidades que conviven con una biodiversidad extraordinaria."
+    }
+  },
+  "preguntas": [
+    {
+      "texto": "¿Cómo imaginas tu primer día de viaje?",
+      "opciones": [
+        { "texto": "Caminando entre mercados y plazas con historia", "puntos": { "mexico": 2, "colombia": 1 } },
+        { "texto": "En un sendero entre montañas y niebla", "puntos": { "costa-rica": 2, "colombia": 1 } },
+        { "texto": "En un café o una librería, conversando sin prisa", "puntos": { "argentina": 2, "brasil": 1 } },
+        { "texto": "Frente a un lago, con volcanes de fondo", "puntos": { "guatemala": 2, "costa-rica": 1 } }
+      ]
+    },
+    {
+      "texto": "¿Qué te gustaría probar primero?",
+      "opciones": [
+        { "texto": "Una tortilla recién hecha con salsas", "puntos": { "mexico": 2, "guatemala": 1 } },
+        { "texto": "Un buen café de origen", "puntos": { "colombia": 2, "costa-rica": 1 } },
+        { "texto": "Unos mates y un asado largo", "puntos": { "argentina": 2, "brasil": 1 } },
+        { "texto": "Fruta tropical y un plato de pescado", "puntos": { "brasil": 2, "colombia": 1 } }
+      ]
+    },
+    {
+      "texto": "¿Qué paisaje te llama más?",
+      "opciones": [
+        { "texto": "Una costa larga con música", "puntos": { "brasil": 2, "colombia": 1 } },
+        { "texto": "Un bosque nuboso lleno de vida", "puntos": { "costa-rica": 2, "guatemala": 1 } },
+        { "texto": "Montañas enormes y cielos abiertos", "puntos": { "argentina": 2, "mexico": 1 } },
+        { "texto": "Volcanes, pueblos y ruinas antiguas", "puntos": { "guatemala": 2, "mexico": 1 } }
+      ]
+    },
+    {
+      "texto": "¿A qué ritmo viajas mejor?",
+      "opciones": [
+        { "texto": "Con calma, quedándome varios días en un solo lugar", "puntos": { "guatemala": 2, "argentina": 1 } },
+        { "texto": "Con aventura: caminatas, ríos y naturaleza", "puntos": { "costa-rica": 2, "colombia": 1 } },
+        { "texto": "Con mucha cultura: museos, fiestas y tradiciones", "puntos": { "mexico": 2, "brasil": 1 } },
+        { "texto": "Con música y planes que surgen en el camino", "puntos": { "colombia": 2, "brasil": 1 } }
+      ]
+    },
+    {
+      "texto": "¿Qué te gustaría traer de vuelta de tu viaje?",
+      "opciones": [
+        { "texto": "Una artesanía hecha por manos locales", "puntos": { "guatemala": 2, "mexico": 1 } },
+        { "texto": "Una canción que no puedo dejar de escuchar", "puntos": { "brasil": 2, "colombia": 1 } },
+        { "texto": "Un libro y muchas conversaciones", "puntos": { "argentina": 2, "mexico": 1 } },
+        { "texto": "Fotos de animales y paisajes que casi no parecen reales", "puntos": { "costa-rica": 2, "brasil": 1 } }
+      ]
+    }
+  ]
+}

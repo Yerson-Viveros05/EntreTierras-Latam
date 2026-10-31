@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz | Entretierras</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/quiz.css">
+</head>
+<body>
+    <header class="header">
+        <a href="index.html" class="logo">
+            <span class="logo-asterisco">*</span> Entretierras
+        </a>
+
+        <nav class="nav" aria-label="Navegación principal">
+            <ul class="lista-nav">
+                <li><a href="index.html#paises">Países</a></li>
+                <li><a href="index.html#sabores">Sabores</a></li>
+                <li><a href="index.html#cultura">Cultura</a></li>
+                <li><a href="index.html#ciudades">Ciudades</a></li>
+                <li><a href="quiz.html" aria-current="page">Quiz</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="quiz" aria-labelledby="titulo-quiz">
+
+            <div class="introduccion-quiz">
+                <span>UN QUIZ DE 5 PREGUNTAS</span>
+                <h1 id="titulo-quiz">¿Qué país de Latinoamérica es para ti?</h1>
+                <p>Cuéntanos cómo te gusta viajar y te sugerimos un país para empezar.</p>
+            </div>
+
+            <!-- Zona de preguntas: JavaScript llena y reutiliza esta misma estructura -->
+            <div class="quiz-pregunta" id="quiz-pregunta" aria-live="polite">
+
+                <div class="quiz-progreso">
+                    <p class="quiz-contador" id="quiz-contador">Pregunta 1 de 5</p>
+                    <div class="quiz-barra" aria-hidden="true">
+                        <div class="quiz-barra-relleno" id="quiz-barra-relleno"></div>
+                    </div>
+                </div>
+
+                <h2 class="quiz-texto" id="quiz-texto"></h2>
+
+                <div class="quiz-opciones" id="quiz-opciones"></div>
+
+                <button type="button" class="boton" id="quiz-siguiente" disabled>Siguiente</button>
+            </div>
+
+            <!-- Zona de resultado: oculta hasta terminar las 5 preguntas -->
+            <div class="quiz-resultado" id="quiz-resultado" hidden aria-live="polite">
+                <img id="resultado-imagen" src="" alt="">
+                <div class="quiz-resultado-texto">
+                    <span>TU PAÍS PARA EMPEZAR</span>
+                    <h2 id="resultado-nombre"></h2>
+                    <p id="resultado-frase"></p>
+                    <a href="#" class="boton" id="resultado-enlace">Conocer este país</a>
+                    <button type="button" class="quiz-reiniciar" id="quiz-reiniciar">Repetir el quiz</button>
+                </div>
+            </div>
+
+            <p class="quiz-error" id="quiz-error" hidden>
+                No pudimos cargar las preguntas. Abre el sitio con Live Server e inténtalo de nuevo.
+            </p>
+        </section>
+    </main>
+
+    <footer class="footer">
+
+        <div class="informacion-footer">
+            <p class="footer-logo">Entretierras</p>
+            <p>Una revista cultural para descubrir Latinoamérica desde sus lugares, sus saberes y sus muchas voces.</p>
+            <p class="footer-lema">La curiosidad nos acerca.</p>
+        </div>
+
+        <div class="enlaces-footer">
+            <h3>Explorar</h3>
+            <ul>
+                <li><a href="index.html#paises">Países</a></li>
+                <li><a href="index.html#sabores">Sabores y tradiciones</a></li>
+                <li><a href="index.html#cultura">Cultura</a></li>
+                <li><a href="index.html#ciudades">Ciudades</a></li>
+            </ul>
+        </div>
+
+        <div class="revistas-footer">
+            <h3>La revista</h3>
+            <ul>
+                <li><a href="#">Nuestra mirada</a></li>
+                <li><a href="#">Cuadernos de historia</a></li>
+                <li><a href="#">Colabora con nosotros</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </div>
+
+        <div class="redes-sociales">
+            <h3>Síguenos</h3>
+            <ul>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">Pinterest</a></li>
+                <li><a href="#">La carta mensual</a></li>
+            </ul>
+        </div>
+
+        <hr class="linea-separadora">
+
+        <div class="informacion-legal">
+            <p>© 2026 Entretierras · Una mirada, nunca la única.</p>
+            <ul>
+                <li><a href="#">Privacidad</a></li>
+                <li><a href="#">Creditos editoriales</a></li>
+                <li><a href="#top">Volver al comienzo</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="js/quiz.js"></script>
+</body>
+</html>
