@@ -273,7 +273,6 @@
 }
 .seccion-ciudades{
     display: flex;
-    flex-direction: column;
     gap: 1.5rem;
     padding-block: 2rem;
 }
