@@ -1,3 +1,2 @@
-# EntreTierras-Latam
-Revista web sobre Latinoamérica: países, sabores y ciudades. Proyecto para aprender HTML, CSS y JavaScript.
-Las imagenes fueron extraidas de la plataforma gratuida llamada pexels.
+Esta rama fue hecho con el proposito de hacer las correciones que se presentan en el main, se corregirá:
+las imagenes, parte del quiz y se agregará las partes de los otros paises que corresponde.
